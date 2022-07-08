@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
@@ -15,46 +19,51 @@
     <title>Studio</title>
   </head>
   <body>
-    <header>
+    <header class="container portfolio-header">
       <a href="index.html" class="logo">
         Web<span class="logo-studio">Studio</span>
       </a>
-      <nav class="link-nav">
-        <ul>
+      <nav>
+        <ul class="link-nav">
           <li><a href="agencja.html">Agencja</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com" class="link-header"
-        >info@devstudio.com</a
-      >
-      <p class="link-header">+48 111 111 111</p>
+      <div class="contacts-header">
+        <a href="mailto:info@devstudio.com" class="link-header"
+          >info@devstudio.com</a
+        >
+        <p class="link-header">+48 111 111 111</p>
+      </div>
     </header>
     <main>
-      <div>
-        <h1 class="header-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <div class="header-main-container">
+        <h1 class="header-main">
+          EFEKTYWNE ROZWIĄZANIA <br />
+          DLA WASZEGO BIZNESU
+        </h1>
         <button type="button" class="order-button">Zamów usługę</button>
       </div>
-      <section>
-        <ul>
+      <section class="container">
+        <ul class="first-list">
           <li>
             <h4 class="section-header">LOREM IPSUM</h4>
-            <p class="section-paragraph">
+            <p class="section-paragraph first-list-padding">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
             <h4 class="section-header">LOREM IPSUM</h4>
-            <p class="section-paragraph">
+            <p class="section-paragraph first-list-padding">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
             <h4 class="section-header">LOREM IPSUM</h4>
-            <p class="section-paragraph">
+            <p class="section-paragraph first-list-padding">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
@@ -68,9 +77,9 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container section">
         <h2 class="header-secondary">Czym się zajmujemy</h2>
-        <ul>
+        <ul class="picture-list">
           <li>
             <img
               src="images/box1.jpg"
@@ -97,11 +106,11 @@
           </li>
         </ul>
       </section>
-      <div>
+      <div class="team-container section">
         <h2 class="header-secondary">Nasz zespół</h2>
-        <ul>
+        <ul class="team-list container">
           <li>
-            <figure>
+            <figure class="team-members">
               <img
                 src="images/img1.jpg"
                 alt="picture of John Doe"
@@ -115,7 +124,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-members">
               <img
                 src="images/img2.jpg"
                 alt="picture of John Doe"
@@ -130,7 +139,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-members">
               <img
                 src="images/img3.jpg"
                 alt="picture of John Doe"
@@ -145,7 +154,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="team-members">
               <img
                 src="images/img4.jpg"
                 alt="picture of John Doe"
@@ -161,7 +170,9 @@
           </li>
         </ul>
       </div>
-      <footer>
+    </main>
+    <footer class="footer-container">
+      <div class="container">
         <a href="index.html" class="logo">
           Web<span class="logo-studio-footer">Studio</span>
         </a>
@@ -170,7 +181,7 @@
           >info@devstudio.com</a
         >
         <p class="contact-footer">+48 111 111 111</p>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
